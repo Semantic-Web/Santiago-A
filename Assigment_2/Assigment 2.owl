@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3">
+        <rdfs:comment>A pedometer ontology that describes the functionality of a pedometer</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Person"/>
+        <rdfs:comment>Age of user</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#First_Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#First_Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Name"/>
+        <rdfs:comment>First name of user</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#LAYING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#LAYING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Last_Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Last_Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Name"/>
+        <rdfs:comment>Last name of user</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Person">
+        <rdfs:comment>Information of the person using the pedometer</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#STANDING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#STANDING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Sitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Sitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#WALKING_DOWNSTAIRS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#WALKING_DOWNSTAIRS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Walking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#WALKING_UPSTAIRS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#WALKING_UPSTAIRS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Walking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Walking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Walking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#fBodyAcc-XYZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#fBodyAcc-XYZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#fBodyAccJerk-XYZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#fBodyAccJerk-XYZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyAcc-XYZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyAcc-XYZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyAccJerk-XYZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyAccJerk-XYZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyAccJerkMag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyAccJerkMag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyAccMag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyAccMag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyGyro-XYZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyGyro-XYZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyGyroJerk-XYZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyGyroJerk-XYZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyGyroJerkMag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyGyroJerkMag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyGyroMag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tBodyGyroMag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tGravityAcc-XYZ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tGravityAcc-XYZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tGravityAccMag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#tGravityAccMag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/santiago/ontologies/2015/6/untitled-ontology-3#Pedometer_Signals"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
