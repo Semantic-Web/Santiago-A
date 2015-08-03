@@ -1,0 +1,74 @@
+Load my FOAF Friends
+log4j:WARN No appenders could be found for logger (org.apache.jena.riot.system.stream.JenaIOEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+Say Hello to Myself
+Hello to Santiago Aguerrevere
+
+Say Hello to my FOAF Friends
+Hello to Ana Luis Aguerrevere
+Hello to Ana Aguerrevere
+
+add my new friends
+
+Say hello to all my friends - hey the new ones are missing!
+Hello to Ana Luis Aguerrevere
+Hello to Ana Aguerrevere
+
+Add the Ontologies
+
+See if the ontologies help to say hello to all my friends - Nope!
+Hello to Ana Luis Aguerrevere
+Hello to Ana Aguerrevere
+Hello to Juan Prado
+Hello to Maciej Medyk
+Hello to Ravi Shankar
+
+Ok, lets add alignment statements for the two ontologies.
+
+Try again - Hello to all my friends - nope still not all!
+Hello to Ana Luis Aguerrevere
+Hello to Ana Aguerrevere
+Hello to Juan Prado
+Hello to Maciej Medyk
+Hello to Ravi Shankar
+
+Run a Reasoner
+
+Finally- Hello to all my friends!
+Hello to Ana Luis Aguerrevere
+Hello to Ana Aguerrevere
+Hello to Juan Prado
+Hello to Maciej Medyk
+Hello to Ravi Shankar
+Hello to Roberto Prado
+
+Say hello to myself - oh no there are two names for me!
+Hello to Santiago Aguerrevere
+
+Add a rule to make just one name
+
+Just checking there is now one name for me!
+Hello to Santiago Aguerrevere
+
+Just checking that I didn't mess anthing up - Say hello to all my friends again.
+Hello to Ana Luis Aguerrevere
+Hello to Ana Aguerrevere
+Hello to Juan Prado
+Hello to Maciej Medyk
+Hello to Ravi Shankar
+Hello to Roberto Prado
+
+Establishing a restriction to just get email friends
+Hello to Santiago Aguerrevere
+Hello to Ana Luis Aguerrevere
+Hello to Ana Aguerrevere
+
+Say hello to my gmail friends only
+Hello to Ana Luis Aguerrevere
+Hello to Ana Aguerrevere
+
+Say hello to my gmail friends only wo entailments
+
+Success!
